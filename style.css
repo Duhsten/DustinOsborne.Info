@@ -52,3 +52,29 @@ body {
   color: #fff;
   border-bottom-color: #2191FB;
 }
+
+.discord {
+  animation: fadeIn 1s;
+}
+.github {
+  animation: fadeIn 2s;
+}
+.telegram {
+  animation: fadeIn 3s;
+}
+.email {
+  animation: fadeIn 4s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.contact-memo {
+  margin-bottom: 100px;
+}
+.pfp {
+  margin-right: 10px;
+}
+.pfp-front-and-center {
+  margin-bottom: 10px;
+}
