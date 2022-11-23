@@ -4,6 +4,15 @@
 
 
 /* Custom default button */
+:root {
+  --primary: #1ECBE1;
+  --secondary: #E1341E;
+	--additive: #961EE1;
+  --additive2: #6AE11E;
+	--text-light: #d8d8d8;
+  --text-dark: #232323;
+	--text-link: #ffffff;
+}
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -50,7 +59,7 @@ body {
 
 .nav-masthead .active {
   color: #fff;
-  border-bottom-color: #2191FB;
+  border-bottom-color: var(--primary);
 }
 
 .discord {
@@ -69,6 +78,10 @@ body {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+@keyframes testAnime {
+  0% { border-color: var(--primary) var(--secondary) var(--additive) var(--additive2); }
+  100% { border-color: var(--additive2) var(--primary) var(--secondary) var(--additive); }
+}
 .contact-memo {
   margin-bottom: 100px;
 }
@@ -77,4 +90,22 @@ body {
 }
 .pfp-front-and-center {
   margin-bottom: 10px;
+  border-style: solid;
+  border-color: var(--primary) var(--secondary) var(--additive) var(--additive2);
+}
+.pfp-front-and-center:hover {
+  animation: testAnime 1s;
+  border-color: var(--additive2) var(--primary) var(--secondary) var(--additive);
+}
+.contact-me-btn{
+  background-color: var(--primary);
+  border-style: solid;
+  border-color: var(--primary);
+  color: var(--text-dark);
+}
+.contact-me-btn:hover{
+  background-color: var(--secondary);
+  border-style: solid;
+  border-color: var(--primary);
+  color: var(--text-light);
 }
